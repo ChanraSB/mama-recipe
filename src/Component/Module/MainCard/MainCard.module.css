@@ -1,0 +1,25 @@
+.wrapper {
+  border: none;
+}
+.descWrapper {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border: none;
+}
+.cardTitle {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.cardText {
+  text-wrap: wrap;
+  font-size: 20px;
+}
+
+.cardBody {
+  width: 60%;
+  border: none;
+}
+.imgWrapper {
+  width: 80%;
+}

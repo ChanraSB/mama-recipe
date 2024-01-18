@@ -1,0 +1,45 @@
+.profilCardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.myRecipeCardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.editMyRecipe {
+  width: auto;
+  background-color: #d3b012;
+  text-decoration: none;
+}
+.mdDelete {
+  color: #d3b012;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border: none;
+  top: 0;
+  right: 0;
+  transform: translateY(50%);
+  box-sizing: border-box;
+}
+.mdDelete:hover {
+  color: #d80000;
+}

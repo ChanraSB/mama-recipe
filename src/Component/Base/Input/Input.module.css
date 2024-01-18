@@ -1,0 +1,27 @@
+.label {
+  font-size: 16px;
+  color: #696f79;
+  margin-top: 10px;
+}
+
+.input {
+  width: 200px;
+  height: 50px;
+  color: aqua;
+
+  border-radius: 6px;
+}
+
+.span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}

@@ -1,0 +1,24 @@
+.card {
+  margin: 20px;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+}
+.img {
+  width: 100%;
+  height: 250px;
+}
+.title {
+  position: absolute;
+  bottom: 20px;
+  padding-right: 50px;
+  color: #3f3a3a;
+  display: inline-block;
+}
+.cardWrapper {
+  height: 100px;
+  margin-top: 30px;
+}
+.cardBody {
+  position: relative;
+}

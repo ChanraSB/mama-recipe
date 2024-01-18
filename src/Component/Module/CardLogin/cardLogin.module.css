@@ -1,0 +1,37 @@
+.card {
+  background-color: none;
+  /* width: 182px;
+  height: 182px; */
+}
+.img {
+  width: 182px;
+  height: 182px;
+}
+#title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.cardText {
+  font-size: 16px;
+}
+.profilPicture {
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    background: #efc81a;
+    padding: 20px 20px;
+    border-radius: 10%;
+    /* width: 50%; */
+    height: auto;
+    text-align: center;
+  }
+  .img {
+    filter: brightness(1);
+  }
+  .cardText {
+    filter: brightness(1);
+  }
+}

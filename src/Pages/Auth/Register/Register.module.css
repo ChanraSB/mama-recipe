@@ -1,0 +1,80 @@
+/* .register {
+  display: flex;
+} */
+.cardWrapper {
+  background-image: url(../../../assets/LoginAndRegister/image15.svg);
+  background-color: #efc81a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 150vh;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginTitle {
+  color: #efc81a;
+  font-size: 30px;
+}
+.loginText {
+  color: #8692a6;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 13px;
+}
+.form {
+  margin-top: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardWrapper {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    background-blend-mode: color;
+    background-size: cover;
+    /* width: 100%; */
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: none;
+  }
+
+  .loginText {
+    color: #8692a6;
+    font-size: 18px;
+    margin-top: 0px;
+    /* margin-bottom: px; */
+  }
+  .col .container .form-control {
+    /* width: auto; */
+    height: 50px;
+  }
+  .col .container form label {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}

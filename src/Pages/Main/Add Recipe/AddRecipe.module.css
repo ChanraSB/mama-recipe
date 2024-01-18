@@ -1,0 +1,19 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  min-height: 400px;
+  background: #f6f5f4;
+  border-radius: 15px;
+  box-sizing: border-box;
+}

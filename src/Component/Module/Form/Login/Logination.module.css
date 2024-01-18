@@ -1,0 +1,14 @@
+.link {
+  text-align: end;
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+}
+.textLink {
+  font-size: 13px;
+  color: #999;
+}
+.signupLink {
+  color: #efc81a;
+  text-decoration: none;
+}
