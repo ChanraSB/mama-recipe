@@ -1,8 +1,4 @@
-# React + Vite
+# Mama Recipe Frontend Web Developer
+Mama Recipe is an online platform that provides various food recipes for users seeking culinary inspiration. With this website, users can explore a wide range of recipes from traditional dishes to modern culinary creations. Additionally, users can share their own favorite recipes, enabling the community to interact and exchange their culinary experiences.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
