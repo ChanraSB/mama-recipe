@@ -16,6 +16,7 @@ React.js, Bootstrap, Redux toolkit
 ## ScreenShot
 
 ## Author
+[<i class="fa fa-github"></i> GitHub](https://github.com/username)
 
 ## Related Project
 
