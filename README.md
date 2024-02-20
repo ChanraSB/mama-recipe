@@ -12,6 +12,10 @@ React.js, Bootstrap, Redux toolkit
 ## Environment Variable
 
 ## Instalation
+1. **Clone the project:**
+   ```sh
+   git clone https://github.com/ChanraSB/mama-recipe
+
 
 ## ScreenShot
 
