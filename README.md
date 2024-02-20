@@ -10,7 +10,7 @@ React.js, Bootstrap, Redux toolkit
 ## Package and Dependencies
 
 ## Environment Variable
-... sh
+``` sh
 VITE_API_MAIN_URL=
 
 ## Instalation
