@@ -10,7 +10,8 @@ React.js, Bootstrap, Redux toolkit
 ## Package and Dependencies
 
 ## Environment Variable
-`VITE_API_MAIN_URL=`
+```sh
+VITE_API_MAIN_URL=
 
 ## Instalation
 1. **Clone the project:**
@@ -20,7 +21,13 @@ React.js, Bootstrap, Redux toolkit
 2. **Go to project directory :**
    ```sh
    cd mama-recipe
-   
+
+3. **Install dependencies:**
+   ```sh
+   npm i
+4. **Start the project:**
+   ```sh
+   npm run dev
 ## ScreenShot
 
 ## Author
