@@ -17,7 +17,8 @@ React.js, Bootstrap, Redux toolkit
    ```sh
    git clone https://github.com/ChanraSB/mama-recipe
 
-2. Go to project directory :
+2. **Go to project directory :**
+   ```sh
    cd mama-recipe
    
 ## ScreenShot
