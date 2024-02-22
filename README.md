@@ -29,7 +29,9 @@ React.js, Bootstrap, Redux toolkit
 ```
 
 ## Environment Variable
-```bash VITE_API_MAIN_URL= ```
+```bash
+VITE_API_MAIN_URL= 
+```
 
 ## Instalation
 1. **Clone the project:**
