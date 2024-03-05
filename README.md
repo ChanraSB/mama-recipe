@@ -56,5 +56,6 @@ VITE_API_MAIN_URL=
 ## Related Project
 ⚡[Backend Mama Recipe](https://github.com/ChanraSB/chanra-s-bakkara)⚡<br>
 ⚡[Frontend Mama Recipe](https://github.com/ChanraSB/mama-recipe)⚡
+⚡[Demo Website Mama Recipe](https://mama-recipe-two.vercel.app/)⚡
 
 
