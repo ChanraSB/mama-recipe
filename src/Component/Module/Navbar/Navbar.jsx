@@ -8,57 +8,58 @@ const Navbar = () => {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-
     if (token) {
       setLoggedIn(true);
     }
   }, []);
   const handleLogin = () => {
-    // Simulasikan logika autentikasi dengan menyimpan token ke local storage
-    const fakeToken = "contoh_token"; // Gantilah dengan token yang diterima dari server
+    const fakeToken = "contoh_token";
     localStorage.setItem("token", fakeToken);
-
-    // Set status login menjadi true
     setLoggedIn(true);
   };
-
   const handleLogout = () => {
-    // Hapus token dari local storage saat logout
     localStorage.removeItem("token");
-
-    // Set status login menjadi false
     setLoggedIn(false);
   };
   return (
-    <div className=" navbarWrapper container">
-      <nav className="navbar navbar-expand-lg bg-light">
-        <div className="collapse navbar-collapse" id="authentication">
-          <ul className="navbar-nav me-auto mx-4 mb-2 mb-lg-0">
-            <li className="nav-item text-dark">
-              <Link className="nav-link px-2 " to="/">
+    <nav className="navbar navbar-expand-lg bg-light ">
+      <div className="container-fluid">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-5 mb-2 mb-lg-0 ">
+            <li className="nav-item">
+              <Link className="nav-link " to="/">
                 Home
               </Link>
             </li>
-            <li className="nav-item px-2">
+            <li className="nav-item">
               <Link className="nav-link" to="/post/add">
                 Add Recipe
               </Link>
             </li>
-            <li className="nav-item px-2">
+            <li className="nav-item dropdown">
               <Link className="nav-link" to="profile">
                 Profile
               </Link>
             </li>
-          </ul>
-          <ul className="navbar-nav mx-4 mb-2 mb-lg-0">
             {isLoggedIn ? (
-              <li className="nav-item" onClick={handleLogout}>
+              <li className="nav-item me-2" onClick={handleLogout}>
                 <Link className="nav-link" to="/">
                   Log Out <IoExitOutline />
                 </Link>
               </li>
             ) : (
-              <li className="nav-item" onClick={handleLogin}>
+              <li className="nav-item me-2" onClick={handleLogin}>
                 <Link className="nav-link" to="login">
                   Log In <CiUser />
                 </Link>
@@ -66,8 +67,8 @@ const Navbar = () => {
             )}
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 

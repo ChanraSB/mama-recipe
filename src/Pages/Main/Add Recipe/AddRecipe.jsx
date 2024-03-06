@@ -7,7 +7,7 @@ import { createRecipe } from "../../../../config/action/recipeAction";
 import Input from "../../../Component/Base/Input/Input";
 import Button from "../../../Component/Base/Button/Button";
 import Textarea from "../../../Component/Base/Textarea/Textarea";
-import style from "./AddRecipe.module.css";
+import styles from "./AddRecipe.module.css";
 const AddRecipe = () => {
   const navigate = useNavigate();
   const { loading } = useSelector((state) => state.recipe);
@@ -51,8 +51,8 @@ const AddRecipe = () => {
 
   return (
     <div>
-      <div className={`container ${style.formWrapper}`}>
-        <form className={style.imgWrapper} onClick={() => document.querySelector(".image").click()}>
+      <div className={`container mt-5 ${styles.formWrapper}` }>
+        <form className={styles.imgWrapper} onClick={() => document.querySelector(".image").click()}>
           {image ? <img src={image} style={{ width: "100%", height: "100%" }} /> : <MdDriveFolderUpload />}
           <Input className="image" name="image" type="file" placeholder="upload an Image" required={true} onChange={handleUploadChange} hidden />
         </form>

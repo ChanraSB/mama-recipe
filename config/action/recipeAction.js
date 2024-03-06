@@ -117,3 +117,62 @@ export const deleteRecipe = (id, data) => async (dispatch) => {
     throw error.response;
   }
 };
+export const popularRecipe = (data) => async (dispatch) => {
+try {
+  dispatch({
+    type : "GET_POPULAR_RECIPE_REQUEST"
+  })
+  const response = await api.get("/recipes/popular", data)
+  const recipe = response.data.data
+  dispatch({ type : "GET_POPULAR_RECIPE_SUCCESS", payload : recipe})
+  return recipe
+} catch (error) {
+  dispatch({ type : "GET_POPULAR_RECIPE_FAILURE", payload : error.response.data.message})
+  throw error.response
+}
+}
+export const newRecipe = (data) => async (dispatch) => {
+try {
+  dispatch({
+    type : "GET_NEW_RECIPE_REQUEST"
+  })
+  const response = await api.get("/recipes/new", data)
+  const recipe = response.data.data
+  dispatch({ type : "GET_NEW_RECIPE_SUCCESS", payload : recipe})
+  return recipe
+} catch (error) {
+  dispatch({ type : "GET_NEW_RECIPE_FAILURE", payload : error.response.data.message})
+  throw error.response
+}
+}
+
+export const likeRecipe = (id, data) => async (dispatch) => {
+    dispatch({
+      type : "LIKE_RECIPE_REQUEST"
+    })
+    const response = await api.put(`/recipes/${id}/like`, data)
+    const recipe = response.data.recipe 
+    console.log (response.data)
+    dispatch({type : "LIKE_RECIPE_SUCCESS", payload : recipe})
+    return recipe
+  
+}
+export const unLikeRecipe = (id, data) => async (dispatch) => {
+    dispatch({
+      type : "UNLIKE_RECIPE_REQUEST"
+    })
+    const response = await api.put(`/recipes/${id}/unlike`, data)
+    const recipe = response.data.recipe 
+    dispatch({type : "UNLIKE_RECIPE_SUCCESS", payload : recipe})
+    return recipe
+  } 
+export const likeCheckRecipe = (id) => async (dispatch) => {
+    dispatch({
+      type : "LIKE_CHECK_RECIPE_REQUEST"
+    })
+    const response = await api.get(`/recipes/${id}/like`)
+    const recipe = response.data.data 
+    dispatch({type : "LIKE_CHECK_RECIPE_SUCCESS", payload : recipe})
+    return recipe
+  } 
+

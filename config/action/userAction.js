@@ -18,7 +18,6 @@ export const login = (data) => async (dispatch) => {
     const response = await api.post("/login", data);
     const user = response.data;
     console.log(user);
-
     localStorage.setItem("token", user.token);
     localStorage.setItem("refresh-token", user.refreshToken);
     dispatch({ type: "LOGIN_SUCCESS", payload: user });

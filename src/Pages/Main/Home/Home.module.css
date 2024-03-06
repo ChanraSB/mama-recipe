@@ -1,0 +1,16 @@
+.imgWrapper {
+ position: relative;
+
+}
+.imgWrapper::after{
+ content: "";
+ background-color: #EFC81A;
+ border-color: #EFC81A;
+ position: absolute;
+ top : 0;
+ right : 0;
+ width :350px;
+ height : 640px;
+ z-index: -2;
+ transform: translateY(-15%);
+}

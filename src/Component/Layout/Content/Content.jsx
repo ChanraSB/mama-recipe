@@ -3,31 +3,46 @@ import MainCard from "../../Module/MainCard/MainCard";
 import mainimage1 from "../../../assets/Home/Rectangle 320.svg";
 import mainimage2 from "../../../assets/Home/Rectangle 321.svg";
 import "./Content.css";
+import { popularRecipe, newRecipe } from "../../../../config/action/recipeAction";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 const Content = () => {
-  const Maincard = [
-    {
-      title: "Healthy Bone Broth Ramen (Quick & Easy)",
-      text: "Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in a hurry? That’s right!",
-    },
-    {
-      title: "Healthy Bone Broth Ramen (Quick & Easy)",
-      text: "Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in a hurry? That’s right!",
-    },
-  ];
-  const title = Maincard.map((obj) => {
-    return obj.title;
-  });
-  const text = Maincard.map((obj) => {
-    return obj.text;
-  });
+  const dispatch = useDispatch();
+  const { popularRecipeList, newRecipeList } = useSelector((state) => state.recipe);
+  useEffect(() => {
+    dispatch(popularRecipe());
+  }, [dispatch]);
+  useEffect(() => {
+    dispatch(newRecipe());
+  }, [dispatch]);
+  
   return (
     <div>
       <main>
         <div id="mainCard" className="container">
-          <MainCard src={mainimage1} className="img-fluid" Title="Popular For You!" Cardtitle={`${title[0]}`} Cardtext={`${text[0]}`} alt={`${title[0]}-image`} />
+        {popularRecipeList && popularRecipeList[0] &&(
+            <MainCard
+              src={popularRecipeList[0].image}
+              className="img-fluid"
+              Title="Popular Recipe For You!"
+              Cardtitle={popularRecipeList[0].title}
+              Cardtext="Popular Recipe just for you"
+              alt={`${popularRecipeList[0].title}-image`}
+            />
+          )}
         </div>
         <div id="mainCard2" className="container">
-          <MainCard src={mainimage2} className="img-fluid" Title="New Recipe" Cardtitle={`${title[1]}`} Cardtext={`${text[1]}`} alt={`${title[1]}-image`} />
+         
+          {newRecipeList && newRecipeList[0] &&(
+            <MainCard
+              src={newRecipeList[0].image}
+              className="img-fluid"
+              Title="New Recipe"
+              Cardtitle={newRecipeList[0].title}
+              Cardtext="New Recipe just for you"
+              alt={`${newRecipeList[0].title}-image`}
+            />
+          )}
         </div>
 
         <div id="populerRecipe">

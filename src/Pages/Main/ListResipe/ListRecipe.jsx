@@ -4,12 +4,15 @@ import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Pagination from "react-bootstrap/Pagination";
 import Input from "../../../Component/Base/Input/Input";
-
+import { useLocation } from "react-router-dom";
 const ListRecipe = () => {
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const searchValue = searchParams.get("search");
   const [params, setParams] = useState({
     page: 1,
     pageSize: 3,
-    search: "",
+    search: searchValue || "",
     sort: "title",
     sortOrder: "asc",
     filter: {},
@@ -89,7 +92,7 @@ const ListRecipe = () => {
           <div className="col-3 ">
             <label htmlFor="sorting">Sort</label>
             <select className="form-select" id="sorting" onChange={handleSorting}>
-              <option value="title-up">ASC</option>
+              <option value="title-up">A</option>
               <option value="title-down">DSC</option>
             </select>
           </div>
@@ -105,9 +108,7 @@ const ListRecipe = () => {
             <Pagination className="pagination" size="lg">
               <Pagination.First onClick={handleFirstPage} />
               <Pagination.Prev onClick={handlePrevPage} />
-              <Pagination.Ellipsis />
               <Pagination.Item>{params.page}</Pagination.Item>
-              <Pagination.Ellipsis />
               <Pagination.Next onClick={handleNextPage} />
               <Pagination.Last onClick={handleLastPage} />
             </Pagination>
