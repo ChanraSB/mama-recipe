@@ -49,12 +49,15 @@ VITE_API_MAIN_URL=
    ```sh
    npm run dev
 ## ScreenShot
-[Register](https://github.com/ChanraSB/mama-recipe/assets/151555550/5c4f08d8-8a87-4d56-8348-e8818c05ab0a)
-[Login](https://github.com/ChanraSB/mama-recipe/assets/151555550/ea484aa5-6c5e-48a1-a147-e9044ffffbe4)
-[My Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/d4740809-c380-4ec4-915e-3bbfde3a1ab7)
-[Liked Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/2ca36dcf-bc5e-46a8-8556-bb44162e203e)
-[Add Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/d619af5a-324c-4bbf-900f-98da37731ddc)
-[Update Profile](https://github.com/ChanraSB/mama-recipe/assets/151555550/d6d1a0ad-f9a4-498b-ac0b-15e2d5d2c9db)
+[Register](https://github.com/ChanraSB/mama-recipe/assets/151555550/5c4f08d8-8a87-4d56-8348-e8818c05ab0a) <br>
+[Login](https://github.com/ChanraSB/mama-recipe/assets/151555550/ea484aa5-6c5e-48a1-a147-e9044ffffbe4) <br>
+[My Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/d4740809-c380-4ec4-915e-3bbfde3a1ab7) <br>
+[Liked Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/2ca36dcf-bc5e-46a8-8556-bb44162e203e) <br>
+[Add Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/d619af5a-324c-4bbf-900f-98da37731ddc) <br>
+[Update Profile](https://github.com/ChanraSB/mama-recipe/assets/151555550/d6d1a0ad-f9a4-498b-ac0b-15e2d5d2c9db) <br>
+[Detail Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/85aa846c-be13-4479-b611-e1b6589f151a) <br>
+[Like a Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/52b5a32f-dc8d-465b-9f03-bf5b2b768517) <br>
+[landing Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/53aed02b-a44a-45ec-8ac3-b7ae827d3a16) <br>
 ## Author
 💻 [Chanra S Bakkara](https://github.com/ChanraSB)
 
