@@ -22,7 +22,7 @@ const Navbar = () => {
     setLoggedIn(false);
   };
   return (
-    <nav className="navbar navbar-expand-lg bg-light ">
+    <nav className="navbar navbar-expand-lg" style={{background : "none", paddingTop : 20}}>
       <div className="container-fluid">
         <button
           className="navbar-toggler"

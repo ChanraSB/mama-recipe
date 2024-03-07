@@ -21,6 +21,7 @@ const UpdateProfilPicture = () => {
   const handleUploadChange = (e) => {
     let uploaded = e.target.files[0];
     setImage(URL.createObjectURL(uploaded));
+    console.log("image", image)
     setSaveImage(uploaded);
   };
   const handlePost = async (e) => {

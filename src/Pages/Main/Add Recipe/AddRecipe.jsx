@@ -19,7 +19,6 @@ const AddRecipe = () => {
     title: "",
     ingredient: "",
     video_link: "",
-    users_id: parseInt(`${localStorage.getItem("id")}`),
   });
 
   const onChange = (e) => {

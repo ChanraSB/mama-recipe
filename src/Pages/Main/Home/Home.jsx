@@ -17,7 +17,9 @@ const Home = () => {
   };
 
   return (
-    <>
+    <> 
+    <div className={styles.background}>
+    </div>
       <Navbar />
       <div className="container">
         <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 mt-4">
@@ -29,17 +31,17 @@ const Home = () => {
               justifyContent: "start",
             }}
           >
-            <div style={{ width: "90%", height: "auto" }}>
+            <div className="" style={{ width: "75%", height: "auto" }}>
               <h1
                 style={{
-                  fontSize: 50,
+                  fontSize: 40,
                   fontWeight: 500,
                   color: "#2E266F",
                 }}
               >
                 Discover Recipe & Delicious Food
               </h1>
-              <form className="d-flex" role="search" style={{ height: 60, width: "100%" }} onSubmit={handleSearch}>
+              <form className="d-flex" role="search" style={{ height: 50, width: "100%" }} onSubmit={handleSearch}>
         <input
           className="form-control me-2"
           type="search"

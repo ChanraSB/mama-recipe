@@ -1,10 +1,18 @@
-#mainCard {
-  margin-top: 50px;
+#mainCard1 {
+  margin-top: 140px;
 }
 #mainCard2 {
   margin-top: 40px;
 }
 #populerRecipe {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
+}
+.mainCardWrapper{
+  margin-top: 1000px;
+}
+@media only screen and (max-width: 600px) {
+  #mainCard1 {
+    margin-top: 45px;
+  }
 }

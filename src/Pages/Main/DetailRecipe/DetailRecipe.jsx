@@ -13,7 +13,7 @@ import { useParams } from "react-router-dom";
 import { BiLike } from "react-icons/bi";
 
 const DetailRecipe = () => {
-  const { loading, recipe, likedRecipe } = useSelector((state) => state.recipe);
+  const {  recipe, likedRecipe } = useSelector((state) => state.recipe);
   const dispatch = useDispatch();
   const params = useParams();
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -40,7 +40,7 @@ const DetailRecipe = () => {
 
   return (
     <section key={recipe.id}>
-      {loading && <h3>loading....</h3>}
+      {/* {loading && <h3>loading....</h3>} */}
       <h1
         className="text-center mt-3 mb-2"
         style={{ fontWeight: "bold", color: "#2E266F" }}
@@ -49,9 +49,9 @@ const DetailRecipe = () => {
       </h1>
       <div className="card border-light">
         <div className="row mb-5">
-          {isLoggedIn && (
+           
             <div
-              className="col-6 mx-auto  img bg-info"
+              className="col-6 mx-auto  img"
               style={{
                 position: "relative",
                 display: "flex",
@@ -67,8 +67,7 @@ const DetailRecipe = () => {
                 alt="..."
                 style={{ width: "100%", height: "100%", margin: "auto" }}
               />
-              
-              <BiLike
+              {isLoggedIn ? (<BiLike
                 onClick={likesRecipe}
                 style={{
                   position: "absolute",
@@ -82,9 +81,10 @@ const DetailRecipe = () => {
                   left: "80%",
                   top: "70%",
                 }}
-              />{" "}
+              />) : (<></>)}
+              
             </div>
-          )}
+        
         </div>
 
         <div className="container text-start d-block mb-4">
