@@ -2,12 +2,15 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
-import { updateAllDataRecipe, getDataRecipeById } from "../../../../config/action/recipeAction";
+import {
+  updateAllDataRecipe,
+  getDataRecipeById,
+} from "../../../../config/action/recipeAction";
 import Input from "../../../Component/Base/Input/Input";
 import Button from "../../../Component/Base/Button/Button";
 import Textarea from "../../../Component/Base/Textarea/Textarea";
 import style from "./EditRecipe.module.css";
-
+import { MdDriveFolderUpload } from "react-icons/md";
 const EditRecipe = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -67,16 +70,49 @@ const EditRecipe = () => {
 
   return (
     <div>
-      <div className={`${style.formWrapper}`}>
-        <div className="container d-flex justify-content-center">
-          <img src={image} className="img-thumbnail" alt="..." />
-        </div>
-        <Input name="image" type="file" placeholder="upload an Image" required={true} onChange={handleUploadChange} />
-        <Input name="title" type="text" placeholder="title" required={true} onChange={onChange} value={values.title} />
-        <Textarea name="ingredient" onChange={onChange} placeholder="Ingredients" required={true} value={values.ingredient} />
-        <Input name="video_link" type="text" placeholder="Link Video" required={true} onChange={onChange} value={values.video_link} />
+      <div className={`container mt-5 ${style.formWrapper}`}>
+          <form
+            className={style.imgWrapper}
+            onClick={() => document.querySelector(".image").click()}>
+            {image ? <img src={image} style={{ width: "100%", height: "100%" }} /> : <MdDriveFolderUpload />}
+          <Input className="image" name="image" type="file" placeholder="upload an Image" required={true} onChange={handleUploadChange} hidden />
+           
+          </form>
+        
 
-        <Button style="btn1" child={loading ? "loading..." : "Save Changes"} onClick={handleEdit} />
+       
+        <Input
+          name="title"
+          type="text"
+          placeholder="title"
+          required={true}
+          onChange={onChange}
+          value={values.title}
+          style={{ background: "#F6F5F4", border: "none" }}
+        />
+        <Textarea
+          name="ingredient"
+          onChange={onChange}
+          placeholder="Ingredients"
+          required={true}
+          value={values.ingredient}
+          style={{ background: "#F6F5F4", border: "none" }}
+        />
+        <Input
+          name="video_link"
+          type="text"
+          placeholder="Link Video"
+          required={true}
+          onChange={onChange}
+          value={values.video_link}
+          style={{ background: "#F6F5F4", border: "none" }}
+        />
+
+        <Button
+          style="btn2"
+          child={loading ? "loading..." : "Save Changes"}
+          onClick={handleEdit}
+        />
       </div>
     </div>
   );

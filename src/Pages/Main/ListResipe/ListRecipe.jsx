@@ -85,15 +85,15 @@ const ListRecipe = () => {
   return (
     <div>
       <div className="container">
-        <div className="row  align-items-center justify-content-between">
-          <div className="col-6  align-items-center w-60">
+        <div className="row align-items-center justify-content-between">
+          <div className="col-6  align-items-center ">
             <Input type="text" placeholder="search" required={true} onChange={handleSeach} value={params.search} />
           </div>
           <div className="col-3 ">
             <label htmlFor="sorting">Sort</label>
-            <select className="form-select" id="sorting" onChange={handleSorting}>
-              <option value="title-up">A</option>
-              <option value="title-down">DSC</option>
+            <select className="form-select" id="sorting" onChange={handleSorting} style={{height : 50}}>
+              <option value="title-up">A-Z</option>
+              <option value="title-down">Z-A</option>
             </select>
           </div>
         </div>

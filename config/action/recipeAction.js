@@ -176,3 +176,18 @@ export const likeCheckRecipe = (id) => async (dispatch) => {
     return recipe
   } 
 
+  export const getMyLikeList = (data) => async (dispatch) => {
+    try {
+      dispatch({
+        type : "GET_MY_LIKE_LIST_REQUEST"
+      })
+      const response = await api.get("/recipes/like", data)
+      const recipe = response.data.data
+      console.log(recipe)
+      dispatch({ type : "GET_MY_LIKE_LIST_SUCCESS", payload : recipe})
+      return recipe
+    } catch (error) {
+      dispatch({ type : "GET_MY_LIKE_LIST_FAILURE", payload : error.response.data.message})
+      throw error.response
+    }
+    }

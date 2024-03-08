@@ -23,7 +23,7 @@ const Content = () => {
   }, [dispatch]);
 
   return (
-    <div classname="mainCardWrapper bg-info">
+    <div classname="mainCardWrapper">
       <div id="mainCard1" className="container">
         {popularRecipeList && popularRecipeList[0] && (
           <MainCard
@@ -42,7 +42,7 @@ const Content = () => {
           </MainCard>
         )}
       </div>
-      <div id="mainCard2" className="container">
+      <div id="mainCard2" className="container ">
         {newRecipeList && newRecipeList[0] && (
           <MainCard
             src={newRecipeList[0].image}

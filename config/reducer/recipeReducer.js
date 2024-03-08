@@ -3,6 +3,7 @@ const initialState = {
   recipeList: [],
   popularRecipeList : [],
   newRecipeList : [],
+  myLikeList : [],
   loading: false,
   error: "",
   totalPages: 1,
@@ -155,6 +156,17 @@ const recipeReducer = (state = initialState, action) => {
           ...state,
           loading: false,
           likedRecipe : action.payload
+        };
+      case "GET_MY_LIKE_LIST_REQUEST":
+        return {
+          ...state,
+          loading: true,
+        };
+      case "GET_MY_LIKE_LIST_SUCCESS":
+        return {
+          ...state,
+          loading: false,
+          myLikeList : action.payload
         };
      
 

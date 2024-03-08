@@ -8,10 +8,10 @@ const Card = (props) => {
   return (
     <div className="col" style={{ position: "relative" }}>
       <Link to={to}>
-        <div className={`card ${style.cardWrapper}`}>
+        <div className={`card ${style.cardWrapper}`} style={{height : 200}}>
           <img className={`card-img  ${style.img}`} src={src} alt={alt} {...Props} />
           <div className={` card-img-overlay ${style.cardBody}`}>
-            <h2 className={style.title}>{title}</h2>
+            <h5 className={style.title}>{title}</h5>
           </div>
         </div>
       </Link>

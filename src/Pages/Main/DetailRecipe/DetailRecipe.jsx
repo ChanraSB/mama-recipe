@@ -11,13 +11,16 @@ import {
 } from "../../../../config/action/recipeAction";
 import { useParams } from "react-router-dom";
 import { BiLike } from "react-icons/bi";
+import Modal from "react-bootstrap/Modal"
 
 const DetailRecipe = () => {
   const {  recipe, likedRecipe } = useSelector((state) => state.recipe);
   const dispatch = useDispatch();
   const params = useParams();
   const [isLoggedIn, setLoggedIn] = useState(false);
+  const [show, setShow] = useState(false);
 
+ 
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -37,7 +40,8 @@ const DetailRecipe = () => {
       dispatch(unLikeRecipe(params.id));
     }
   };
-
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <section key={recipe.id}>
       {/* {loading && <h3>loading....</h3>} */}
@@ -51,21 +55,21 @@ const DetailRecipe = () => {
         <div className="row mb-5">
            
             <div
-              className="col-6 mx-auto  img"
+              className=" shadow col-6 mx-auto  img"
               style={{
                 position: "relative",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                width: "auto",
-                height: "45vh",
+                width: 500,
+                height: 400,
               }}
             >
               <img
                 src={recipe.image}
                 className="card-img"
                 alt="..."
-                style={{ width: "100%", height: "100%", margin: "auto" }}
+                style={{ width: "100%", height: "100%", margin: "auto", objectFit : "cover" }}
               />
               {isLoggedIn ? (<BiLike
                 onClick={likesRecipe}
@@ -107,7 +111,27 @@ const DetailRecipe = () => {
         <Button
           style="btn2 ms-0"
           child={<img className="img-fluid" src={playButton}></img>}
+          onClick={handleShow}
         />
+        <Modal show={show} onHide={handleClose}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Detail Video</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <div className="ratio ratio-16x9">
+                <iframe
+                  className="video embed-responsive-item"
+                  src={recipe.video_link?.replace("youtu.be", "youtube.com/embed") || recipe.video_link?.replace("youtube.com", "youtube.com/embed")}
+                  allowFullScreen
+                  style={{ width: "100%", height: "100%" }}
+                ></iframe>
+              </div>
+        </Modal.Body>
+        
+      </Modal>
         <br />
       </div>
     </section>

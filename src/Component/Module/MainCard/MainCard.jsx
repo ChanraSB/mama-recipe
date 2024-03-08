@@ -16,7 +16,7 @@ const MainCard = (props) => {
         <div className="row gx-5 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 g-0">
           <div className={`cols-sm-12 col-md-6 col-xl-6 col-lg-6 `}>
             <div className={` ${style.imgWrapper} `}>
-              <img src={src} className={className} alt={alt} style={{height : "100%"}}/>
+              <img src={src} className={className} alt={alt} style={{height : "100%", width : "100%", objectFit : "cover", borderRadius : 10}}/>
             </div>
           </div>
           <div className={`cols-sm-12 col-md-6 col-xl-6 col-lg-6  ${style.descWrapper}`}>

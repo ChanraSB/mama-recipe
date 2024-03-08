@@ -58,7 +58,7 @@ const AddRecipe = () => {
 
         <Input name="title" type="text" placeholder="title" required={true} onChange={onChange} value={values.title} style={{ background: "#F6F5F4", border: "none" }} />
         <Textarea name="ingredient" onChange={onChange} placeholder="Ingredients" required={true} value={values.ingredient} style={{ background: "#F6F5F4", border: "none" }} />
-        <Input name="video_link" type="text" placeholder="Link Video" required={true} onChange={onChange} value={values.video_link} style={{ background: "#F6F5F4", border: "none" }} />
+        <Input name="video_link" type="text" placeholder="Link Youtube Video" required={true} onChange={onChange} value={values.video_link} style={{ background: "#F6F5F4", border: "none" }} />
 
         <Button style="btn2" child={loading ? "loading..." : "Post"} onClick={handlePost} />
       </div>

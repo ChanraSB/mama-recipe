@@ -1,8 +1,35 @@
 #mainCard1 {
   margin-top: 140px;
+  position: relative;
 }
+#mainCard1::after {
+  content: "";
+  position: absolute;
+  border : 2px solid #EFC81A;
+  border-radius: 10px;
+  width : 47%;
+  height : 300px;
+  left : 30px;
+  top : 75px;
+  background: none;
+  z-index: -1;
+}
+
 #mainCard2 {
   margin-top: 40px;
+  position: relative;
+}
+#mainCard2::after {
+  content: "";
+  position: absolute;
+  border : 2px solid #EFC81A;
+  border-radius: 10px;
+  width : 47%;
+  height : 300px;
+  left : -10px;
+  top : 75px;
+  background: #EFC81A;
+  z-index: -1;
 }
 #populerRecipe {
   margin-top: 40px;
