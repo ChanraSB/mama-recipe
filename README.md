@@ -69,6 +69,9 @@ VITE_API_MAIN_URL=
 |------------|---------------|
 | ![Detail Recipe Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/58119921-ef93-4eee-b7bd-bd926045cb10) | ![Detail Video](https://github.com/ChanraSB/mama-recipe/assets/151555550/9fd7667d-47e0-4e62-b092-5220dd0ccaee) |
 
+| Edit Recipe Page |
+|------------|
+|
 
 
 
