@@ -71,7 +71,8 @@ VITE_API_MAIN_URL=
 
 | Edit Recipe Page |
 |------------|
-|
+| ![Edit Recipe Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/72be0a3a-7249-488a-8e94-22b81807cad1) |
+
 
 
 
