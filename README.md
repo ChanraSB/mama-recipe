@@ -53,13 +53,13 @@ VITE_API_MAIN_URL=
 |------------|---------------|
 | ![Login Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/23bf0f2e-be5a-4f80-9e28-953405375bdf) | ![Register (3)](https://github.com/ChanraSB/mama-recipe/assets/151555550/52fceb42-d5df-450c-88c9-7fbf97cf9b0d) |
 
-| My Recipe | Liked Recipe |
-|------------|---------------|
-| ![My Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/8b9c283e-4707-4a6f-a9b2-d377559731d1) | ![Liked Recipe (2)](https://github.com/ChanraSB/mama-recipe/assets/151555550/ecf46bb8-890c-4edf-93fc-6715e29dec89) |
-
 | Profile Page | Update Profile Picture |
 |------------|---------------|
 | ![Profile Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/086b6a2b-7733-40ef-97ee-6b2437c3d35a) | ![Update Profile Picture](https://github.com/ChanraSB/mama-recipe/assets/151555550/f72cadec-0b61-49b2-9390-d272c7d9e852) |
+
+| My Recipe | Liked Recipe |
+|------------|---------------|
+| ![My Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/8b9c283e-4707-4a6f-a9b2-d377559731d1) | ![Liked Recipe (2)](https://github.com/ChanraSB/mama-recipe/assets/151555550/ecf46bb8-890c-4edf-93fc-6715e29dec89) |
 
 | Landing Page | List Recipe Page |
 |------------|---------------|
