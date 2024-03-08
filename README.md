@@ -49,15 +49,31 @@ VITE_API_MAIN_URL=
    ```sh
    npm run dev
 ## ScreenShot
-[Register](https://github.com/ChanraSB/mama-recipe/assets/151555550/5c4f08d8-8a87-4d56-8348-e8818c05ab0a) <br>
-[Login](https://github.com/ChanraSB/mama-recipe/assets/151555550/ea484aa5-6c5e-48a1-a147-e9044ffffbe4) <br>
-[My Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/d4740809-c380-4ec4-915e-3bbfde3a1ab7) <br>
-[Liked Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/2ca36dcf-bc5e-46a8-8556-bb44162e203e) <br>
-[Add Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/d619af5a-324c-4bbf-900f-98da37731ddc) <br>
-[Update Profile](https://github.com/ChanraSB/mama-recipe/assets/151555550/d6d1a0ad-f9a4-498b-ac0b-15e2d5d2c9db) <br>
-[Detail Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/85aa846c-be13-4479-b611-e1b6589f151a) <br>
-[Like a Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/52b5a32f-dc8d-465b-9f03-bf5b2b768517) <br>
-[landing Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/53aed02b-a44a-45ec-8ac3-b7ae827d3a16) <br>
+| Login Page | Register Page |
+|------------|---------------|
+| ![Login Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/23bf0f2e-be5a-4f80-9e28-953405375bdf) | ![Register (3)](https://github.com/ChanraSB/mama-recipe/assets/151555550/52fceb42-d5df-450c-88c9-7fbf97cf9b0d) |
+
+| My Recipe | Liked Recipe |
+|------------|---------------|
+| ![My Recipe](https://github.com/ChanraSB/mama-recipe/assets/151555550/8b9c283e-4707-4a6f-a9b2-d377559731d1) | ![Liked Recipe (2)](https://github.com/ChanraSB/mama-recipe/assets/151555550/ecf46bb8-890c-4edf-93fc-6715e29dec89) |
+
+| Profile Page | Update Profile Picture |
+|------------|---------------|
+| ![Profile Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/086b6a2b-7733-40ef-97ee-6b2437c3d35a) | ![Update Profile Picture](https://github.com/ChanraSB/mama-recipe/assets/151555550/f72cadec-0b61-49b2-9390-d272c7d9e852) |
+
+| Landing Page | List Recipe Page |
+|------------|---------------|
+| ![Landing Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/4ae1441e-9163-4cf4-a015-d0dfb59fd4fa) | ![List Recipe Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/8158cbca-a368-44d8-afb9-303d7e9d6b9f) |
+
+| Detail Recipe Page | Detail Video |
+|------------|---------------|
+| ![Detail Recipe Page](https://github.com/ChanraSB/mama-recipe/assets/151555550/58119921-ef93-4eee-b7bd-bd926045cb10) |
+![Detail Video](https://github.com/ChanraSB/mama-recipe/assets/151555550/9fd7667d-47e0-4e62-b092-5220dd0ccaee) |
+
+
+
+
+
 ## Author
 💻 [Chanra S Bakkara](https://github.com/ChanraSB)
 
